@@ -3,8 +3,7 @@
   <Name>rdiff-backup-rdiffweb</Name>
   <Repository>registre.waazaa.fr/rdiff-backup-rdiffweb:latest</Repository>
   <Registry/>
-  <Network>br0</Network>
-  <MyIP>192.168.1.43</MyIP>
+  <Network>bridge</Network>
   <Shell>bash</Shell>
   <Privileged>false</Privileged>
   <Support/>
@@ -13,22 +12,22 @@
   <Category/>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
-  <Icon>https://git.waazaa.fr/waazaa/rdiff-backup/raw/branch/main/root/app/config/rdiffweb/images/icone.png</Icon>
-  <ExtraParams/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/my-rdiff-backup-rdiffweb.png</Icon>
+  <ExtraParams>--container-name=rdiff-backup-rdiffweb</ExtraParams>
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1720687723</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
   <Config Name="CRON_PATTERN" Target="CRON_PATTERN" Default="* */12 * * *" Mode="" Description="FR: Cron pattern pour le lancement de rdiff-backup&#13;&#10;EN: Cron pattern of the rdiff-backup launching process" Type="Variable" Display="always" Required="false" Mask="false">0 */4 * * *</Config>
   <Config Name="EMAIL_HOST" Target="EMAIL_HOST" Default="mail.example.com:587" Mode="" Description="FR: Serveur mail&#13;&#10;EN: Mail server host" Type="Variable" Display="always" Required="false" Mask="false">mail.example.com:587</Config>
-  <Config Name="EMAIL_SENDER" Target="EMAIL_SENDER" Default="sender@example.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">sender@example.com</Config>
-  <Config Name="EMAIL_USERNAME" Target="EMAIL_USERNAME" Default="account@example.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">account@example.com</Config>
-  <Config Name="EMAIL_PASSWORD" Target="EMAIL_PASSWORD" Default="azerty" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">azerty</Config>
-  <Config Name="webui" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
-  <Config Name="/app" Target="/app" Default="/mnt/user/appdata/rdiff-backup/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rdiff-backup-rdiffweb/</Config>
-  <Config Name="/backups" Target="/backups" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Backups/</Config>
-  <Config Name="/source" Target="/source" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Source/</Config>
-  <Config Name="BRAND_HEADER_NAME" Target="BRAND_HEADER_NAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">rdiff-backup-rdiffweb</Config>
+  <Config Name="EMAIL_SENDER" Target="EMAIL_SENDER" Default="sender@example.com" Mode="" Description="FR: Email expéditeur&#13;&#10;EN: Sender's email" Type="Variable" Display="always" Required="false" Mask="false">sender@example.com</Config>
+  <Config Name="EMAIL_USERNAME" Target="EMAIL_USERNAME" Default="account@example.com" Mode="" Description="FR: Email utilisateur SMTP&#13;&#10;EN: SMTP user's email" Type="Variable" Display="always" Required="false" Mask="false">account@example.com</Config>
+  <Config Name="EMAIL_PASSWORD" Target="EMAIL_PASSWORD" Default="azerty" Mode="" Description="FR: SMTP mot de passe&#13;&#10;EN: SMTP's password" Type="Variable" Display="always" Required="false" Mask="true">azerty</Config>
+  <Config Name="webui" Target="8080" Default="8080" Mode="tcp" Description="FR: Port de la webui de rdiffweb&#13;&#10;EN: rdiffweb's webui port" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="/app" Target="/app" Default="/mnt/user/appdata/rdiff-backup/" Mode="rw" Description="FR: Stockage persistent&#13;&#10;EN: Persistent storage" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/rdiff-backup-rdiffweb/</Config>
+  <Config Name="/backups" Target="/backups" Default="" Mode="rw" Description="FR: Dossier de destinationn des sauvegardes incrémentales&#13;&#10;EN: Incremental's backups destination folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Backups/</Config>
+  <Config Name="/source" Target="/source" Default="" Mode="rw" Description="FR: Dossier à sauvegarder&#13;&#10;EN: Source folder ton backup" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/Source/</Config>
+  <Config Name="BRAND_HEADER_NAME" Target="BRAND_HEADER_NAME" Default="" Mode="" Description="FR: Le nom de cette instance&#13;&#10;EN: Instance's name" Type="Variable" Display="always" Required="false" Mask="false">rdiff-backup-rdiffweb</Config>
 </Container>
