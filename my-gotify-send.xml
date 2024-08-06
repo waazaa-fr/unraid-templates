@@ -28,7 +28,7 @@ Message test for example = message&#xD;
 &#xD;
 2 - Watchfolder&#xD;
 echo "Message test for example" &amp;gt; /mnt/user/appdata/gotify-send/watch/AyFvoYh7Z40JlZA</Overview>
-  <Category/>
+  <Category>Tools:</Category>
   <WebUI/>
   <TemplateURL/>
   <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/gotify-send.png</Icon>
