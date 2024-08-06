@@ -36,8 +36,8 @@ echo "Message test for example" &amp;gt; /mnt/user/appdata/gotify-send/watch/AyF
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1722939488</DateInstalled>
-  <DonateText/>
-  <DonateLink/>
+  <DonateText>Buy me coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
   <Config Name="WEB HTTP GET" Target="4949" Default="4949" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4949</Config>
   <Config Name="GOTIFY_URL" Target="GOTIFY_URL" Default="https://gotify.example.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://gotify.example.com</Config>
