@@ -22,7 +22,7 @@ Incremental solution for backup using rdiff-backup associated with a webui rdiff
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1722872358</DateInstalled>
-  <DonateText>Buy me coffee</DonateText>
+  <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
   <Config Name="CRON_PATTERN" Target="CRON_PATTERN" Default="* */12 * * *" Mode="" Description="FR: Cron pattern pour le lancement de rdiff-backup&#13;&#10;EN: Cron pattern of the rdiff-backup launching process" Type="Variable" Display="always" Required="false" Mask="false">0 */4 * * *</Config>
