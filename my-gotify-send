@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>gotify-send</Name>
+  <Repository>waazaafr/gotify-send:latest</Repository>
+  <Registry>waazaafr/gotify-send:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/r/waazaafr/gotify-send</Project>
+  <Overview>FR:&#xD;
+ce container a pour mission de relayer des messages textuels vers un serveur Gotify de 2 fa&#xE7;ons possibles:&#xD;
+1 - En envoyant une requ&#xEA;te http GET&#xD;
+2 - En &#xE9;crivant dans un fichier dans un dossier surveill&#xE9;&#xD;
+&#xD;
+EN:&#xD;
+this container gives you opportunity to send textual messages to a Gotify server in 2 ways:&#xD;
+1 - By sending an http GET request &#xD;
+2 - By writing the message to a watchfolder&#xD;
+&#xD;
+&#xD;
+1 - HTTP Get exemple:&#xD;
+curl http://192.168.1.40:4949/send/AyFvoYh7Z40JlZA/Message test for example &amp;amp;&amp;gt; /dev/null&#xD;
+192.168.1.40:4949 = ip and port using by this container&#xD;
+AyFvoYh7Z40JlZA = token Gotify&#xD;
+Message test for example = message&#xD;
+&#xD;
+2 - Watchfolder&#xD;
+echo "Message test for example" &amp;gt; /mnt/user/appdata/gotify-send/watch/AyFvoYh7Z40JlZA</Overview>
+  <Category/>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/gotify-send.png</Icon>
+  <ExtraParams>--pids-limit=2048</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1722939488</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="WEB HTTP GET" Target="4949" Default="4949" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4949</Config>
+  <Config Name="GOTIFY_URL" Target="GOTIFY_URL" Default="https://gotify.example.com" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">https://gotify.example.com</Config>
+  <Config Name="watchfolder" Target="/watch" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gotify-send/watch</Config>
+  <Config Name="logs" Target="/app/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/gotify-send/logs</Config>
+</Container>
