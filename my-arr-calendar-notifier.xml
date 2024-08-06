@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>arr-calendar-notifier</Name>
+  <Repository>waazaafr/arr-calendar-notifier:latest</Repository>
+  <Registry>waazaafr/arr-calendar-notifier:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/r/waazaafr/arr-calendar-notifier</Project>
+  <Overview>FR:&#xD;
+Envoi de notifications par divers canaux d'&#xE9;v&#xE8;nements des calendriers de nos containers servarr.&#xD;
+Les canaux possibles sont: E-mail, Discord, Gotify&#xD;
+G&#xE9;n&#xE9;ration de flux rss &#xE9;galement&#xD;
+&#xD;
+EN:&#xD;
+Sending notification on events from our servarr's calendars.&#xD;
+The notifications can be to: E-mail, Discord, Gotify.&#xD;
+RSS feeds are also generated.&#xD;
+</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/arr-calendar-notifier-icon.png</Icon>
+  <ExtraParams>--hostname=arr-calendar-notifier --memory=100m --pids-limit=2048</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1722902442</DateInstalled>
+  <DonateText>Buy me coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="/app" Target="/app" Default="/mnt/user/appdata/arr-calendar-notifier" Mode="rw" Description="Dossier /app" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/arr-calendar-notifier</Config>
+  <Config Name="HTTP" Target="5000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5000</Config>
+  <Config Name="/etc/localtime" Target="/etc/localtime" Default="" Mode="ro" Description="" Type="Path" Display="always-hide" Required="false" Mask="false">/etc/localtime</Config>
+</Container>
