@@ -36,7 +36,7 @@ echo "Message test for example" &amp;gt; /mnt/user/appdata/gotify-send/watch/AyF
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1722939488</DateInstalled>
-  <DonateText>Buy me coffee</DonateText>
+  <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
   <Config Name="WEB HTTP GET" Target="4949" Default="4949" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4949</Config>
