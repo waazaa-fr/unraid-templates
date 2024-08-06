@@ -27,7 +27,7 @@ RSS feeds are also generated.&#xD;
   <PostArgs/>
   <CPUset/>
   <DateInstalled>1722902442</DateInstalled>
-  <DonateText>Buy me coffee</DonateText>
+  <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
   <Config Name="/app" Target="/app" Default="/mnt/user/appdata/arr-calendar-notifier" Mode="rw" Description="Dossier /app" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/arr-calendar-notifier</Config>
