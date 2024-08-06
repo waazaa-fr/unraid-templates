@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>librespeed</Name>
+  <Repository>waazaafr/librespeed:latest</Repository>
+  <Registry>waazaafr/librespeed:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/repository/docker/waazaafr/librespeed/general</Project>
+  <Overview>FR:&#xD;
+Un test librespeed lanc&#xE9; au d&#xE9;marrage du container tout simplement.&#xD;
+Regardez les logs une fois d&#xE9;marr&#xE9;.&#xD;
+&#xD;
+EN:&#xD;
+A librespeed started on container's start simply.&#xD;
+Look et the logs after start.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/librespeed-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1722965103</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+</Container>
