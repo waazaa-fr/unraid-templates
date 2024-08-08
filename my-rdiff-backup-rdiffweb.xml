@@ -13,7 +13,7 @@
 Solution de sauvegarde incr&#xE9;mentales rdiff-backup associ&#xE9; &#xE0; une webui de gestion du d&#xE9;p&#xF4;t cr&#xE9;&#xE9; par rdiffweb&#xD;
 &#xD;
 EN:&#xD;
-Incremental solution for backup using rdiff-backup associated with a webui rdiffweb</Overview>
+Incremental solution for backup using rdiff-backup associated with a webui rdiffweb. Username: admin Password: admin123</Overview>
   <Category>Backup:</Category>
   <WebUI>http://[IP]:[PORT:8080]</WebUI>
   <TemplateURL/>
