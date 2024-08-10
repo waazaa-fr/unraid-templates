@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>turing-smart-screen</Name>
+  <Repository>waazaafr/turing-smart-screen:latest</Repository>
+  <Registry>waazaafr/turing-smart-screen:latest</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://hub.docker.com/r/waazaafr/turing-smart-screen</Support>
+  <Project>https://hub.docker.com/r/waazaafr/turing-smart-screen</Project>
+  <Overview>FR:&#xD;
+Statistiques monitor&#xE9;es vers &#xE9;cran compatibles.&#xD;
+Le projet turing-smart-screen en container Docker.&#xD;
+Plus d'informations sur les &#xE9;crans compatibles et la configuration sur le github du projet:&#xD;
+https://github.com/mathoudebine/turing-smart-screen-python&#xD;
+&#xD;
+EN:&#xD;
+Monitor statistics on compatibles screens.&#xD;
+Project turing-smart-screen in Docker.&#xD;
+More informations about material compatibility and settings on the github's project link:&#xD;
+https://github.com/mathoudebine/turing-smart-screen-python&#xD;
+&#xD;
+&#xD;
+Setup:&#xD;
+- setup variables and mapping&#xD;
+- don't forget to modify the device name of your screen (see result of command dmesg just after connecting your screen)&#xD;
+- if you need to add an nvidia GPU set same variables as Plex/emby/Jellyfin to work with&#xD;
+&#xD;
+Start:&#xD;
+Look at the console if your screen didn't work.&#xD;
+&#xD;
+Customization:&#xD;
+you will find on the /app's mapped folder the source of the project. On the res/ folder you will find a themes/ folder container some themes.&#xD;
+You can take the name of a folder inside /app/res/themes and set it up to the THEME variable.&#xD;
+</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/turing-monitor-icon.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1723308810</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="/dev/ttyACM0" Target="" Default="" Mode="" Description="Your screen device. Found it by connecting it and see just after the result of this console command: dmesg" Type="Device" Display="always" Required="false" Mask="false">/dev/ttyACM0</Config>
+  <Config Name="APPDATA" Target="/app" Default="/mnt/user/appdata/turing-smart-screen/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/turing-smart-screen/</Config>
+  <Config Name="THEME" Target="THEME" Default="" Mode="" Description="The name of the theme. Must be the name of one subfolder of /app/res/themes." Type="Variable" Display="always" Required="false" Mask="false">Cyberpunk-net</Config>
+  <Config Name="ETHERNET_INTERFACE" Target="ETHERNET_INTERFACE" Default="br0" Mode="" Description="The name of the ethernet interface." Type="Variable" Display="always" Required="false" Mask="false">eth0</Config>
+  <Config Name="REVISION" Target="REVISION" Default="A" Mode="" Description="To identify your smart screen: https://github.com/mathoudebine/turing-smart-screen-python/wiki/Hardware-revisions" Type="Variable" Display="always" Required="false" Mask="false">A</Config>
+  <Config Name="BRIGHTNESS" Target="BRIGHTNESS" Default="20" Mode="" Description="Percent of the brightness" Type="Variable" Display="always" Required="false" Mask="false">40</Config>
+  <Config Name="DISPLAY_REVERSE" Target="DISPLAY_REVERSE" Default="false" Mode="" Description="If true the video result will be in landscape mode" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
