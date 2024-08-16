@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>Proxy-WOL-Redirect</Name>
+  <Repository>waazaafr/proxy-wol-redirect:latest</Repository>
+  <Registry>waazaafr/proxy-wol-redirect:latest</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/r/waazaafr/proxy-wol-redirect</Project>
+  <Overview>FR&#xD;
+Visite une URL &amp;gt; lance le r&#xE9;veil WOL d'une machine cible &amp;gt; une fois r&#xE9;veill&#xE9; redirige vers URL de destination.&#xD;
+Ce container doit tourner en mode "host" pour permettre l'envoi du magic packet WOL.&#xD;
+&#xD;
+EN&#xD;
+Visit an URL &amp;gt; launch magi packet to a target machine &amp;gt; when awake redirect to destination URL&#xD;
+This container must be run as "host" for sending magic packet.&#xD;
+&#xD;
+&#xD;
+</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8565]/</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/ItJustFox/unraidtemplate/master/WaamanProxy/my-Proxy-WOL-Redirect.xml</TemplateURL>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/proxy-wol-redirect.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1723811514</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="SERVER_PORT" Target="8565" Default="8565" Mode="" Description="FR: Port d'&#xE9;coute&#13;&#10;EN: Listening port" Type="Variable" Display="always" Required="false" Mask="false">8565</Config>
+  <Config Name="TIMEOUT" Target="TIMEOUT" Default="120" Mode="" Description="FR: Nombre de secondes avant de timeout&#13;&#10;EN: Number of seconds before timeout" Type="Variable" Display="always" Required="false" Mask="false">120</Config>
+  <Config Name="MAC" Target="MAC" Default="52:54:00:cc:35:5C" Mode="" Description="FR: Adresse MAC de la machine &#xE0; r&#xE9;veiller&#13;&#10;EN: MAC Adress of the target machine to wake up&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false">52:54:00:cc:35:5C</Config>
+  <Config Name="REDIRECT" Target="REDIRECT" Default="http://my_radarr" Mode="" Description="FR: URL de redirection une fois la machine r&#xE9;veill&#xE9;e&#13;&#10;EN: The redirect URL when machine is awake&#13;&#10;&#13;&#10;" Type="Variable" Display="always" Required="false" Mask="false">http://my_radarr</Config>
+  <Config Name="SSL_VERIFY" Target="SSL_VERIFY" Default="true" Mode="" Description="FR&#13;&#10;Si 'false' pas de v&#xE9;rification du certificat. Autorise les certificats auto sign&#xE9;s pour l'URL de destination&#13;&#10;EN&#13;&#10;If " Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+</Container>
