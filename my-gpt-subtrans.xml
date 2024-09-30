@@ -17,7 +17,7 @@
     Source of gpt-subtrans: https://github.com/machinewrapped/gpt-subtrans&#xD;
     &#xD;
     Usage on demand run:&#xD;
-    docker exec -it gpt-subtrans translate -o /subtitles/output.srt /subtitles/original.srt&#xD;
+    docker exec -it gpt-subtrans-openai translate -o /subtitles/output.srt /subtitles/original.srt&#xD;
   </Overview>
   <Category>Tools:</Category>
   <WebUI/>
