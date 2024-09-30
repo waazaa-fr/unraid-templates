@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>gpt-subtrans</Name>
+  <Repository>waazaafr/gpt-subtrans-openai:latest</Repository>
+  <Registry>waazaafr/gpt-subtrans-openai:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/repository/docker/waazaafr/gpt-subtrans-openai/general</Project>
+  <Overview>FR&#xD;
+    Container contenant gpt-subtrans pour traduire des .srt vers une autre langue en utilisant OpenAI ChatGPT&#xD;
+    EN&#xD;
+    Translate .srt files using gpt-subtrans and OpenAI ChatGPT&#xD;
+    &#xD;
+    Source of gpt-subtrans: https://github.com/machinewrapped/gpt-subtrans&#xD;
+    &#xD;
+    Usage on demand run:&#xD;
+    docker exec -it gpt-subtrans translate -o /subtitles/output.srt /subtitles/original.srt&#xD;
+  </Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/gpt-subtrans.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1727671017</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="OPENAI_API_KEY" Target="OPENAI_API_KEY" Default="sk-xxxxxxxxxxx" Mode="" Description="FR&#13;&#10;Votre clef API OpenAI&#13;&#10;EN&#13;&#10;Your OpenAI API key" Type="Variable" Display="always" Required="false" Mask="false">sk-xxxxxxxx</Config>
+  <Config Name="TARGET_LANGUAGE" Target="TARGET_LANGUAGE" Default="fre" Mode="" Description="FR&#13;&#10;Langue de traduction&#13;&#10;EN&#13;&#10;Translated language" Type="Variable" Display="always" Required="false" Mask="false">fre</Config>
+  <Config Name="/subtitles" Target="/subtitles" Default="" Mode="rw" Description="FR&#13;&#10;Dossier contenant les .srt&#13;&#10;EN&#13;&#10;Folder containing .srt files" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/subtitles</Config>
+</Container>
