@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <Container version="2">
-  <Name>gpt-subtrans</Name>
+  <Name>gpt-subtrans-openai</Name>
   <Repository>waazaafr/gpt-subtrans-openai:latest</Repository>
   <Registry>waazaafr/gpt-subtrans-openai:latest</Registry>
   <Network>bridge</Network>
