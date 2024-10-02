@@ -14,6 +14,8 @@ WEBUI gpt-subtrans pour faire traduire des sous-titres avec ChatGPT OpenAI&#xD;
 &#xD;
 EN&#xD;
 WEBUI gpt-subtrans for translate subtitles using ChatGPT OpenAI&#xD;
+&#xD;
+Project source: https://github.com/machinewrapped/gpt-subtrans&#xD;
 </Overview>
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:5800]/</WebUI>
