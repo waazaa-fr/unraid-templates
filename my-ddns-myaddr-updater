@@ -1,0 +1,50 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>ddns-myaddr-updater</Name>
+  <Repository>waazaafr/ddns-myaddr-updater:latest</Repository>
+  <Registry>waazaafr/ddns-myaddr-updater:latest</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/waazaa-fr/ddns-myaddr-updater</Project>
+  <Overview>FR&#xD;
+DDNS client pour mettre &#xE0; jour les entr&#xE9;es DNS offertes par https://myaddr.tools.&#xD;
+Il faut cr&#xE9;er un config.yml qui contiendra vos param&#xE8;tres et la possibilit&#xE9; de mettre &#xE0; jour plusieurs entr&#xE9;es.&#xD;
+&#xD;
+&#xD;
+EN&#xD;
+DDNS client for updating DNS entries offered by https://myaddr.tools.&#xD;
+You need to create a config.yml file for your settings and to allow multiple DNS entries updates.&#xD;
+&#xD;
+&#xD;
+Example of config.yml:&#xD;
+&#xD;
+example1.myaddr.tools:&#xD;
+    KEY: XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX&#xD;
+    IPv4: auto&#xD;
+    IPv6: "fe80::1"&#xD;
+    NO_UPDATE_LIMIT: 30&#xD;
+example2.myaddr.tools:&#xD;
+    KEY: YYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYYY&#xD;
+    IPv4: auto&#xD;
+    IPv6: none&#xD;
+    NO_UPDATE_LIMIT: 30&#xD;
+</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/myaddr.tools.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1731394760</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires>FR&#xD;
+Entr&#xE9;es chez https://myaddr.tools&#xD;
+EN&#xD;
+Entries on https://myaddr.tools</Requires>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/ddns-myaddr-updater/</Config>
+</Container>
