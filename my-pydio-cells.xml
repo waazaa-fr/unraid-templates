@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pydio-cells</Name>
+  <Repository>pydio/cells</Repository>
+  <Registry>pydio/cells</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://pydio.com/en/docs/cells/v2/docker</Project>
+  <Overview>FR&#xD;
+Serveur Pydio Cells.&#xD;
+N&#xE9;cessite une base de donn&#xE9;es mysql/mariadb.&#xD;
+Apr&#xE9;s lancement allez visiter la webui pour faire l'installation.&#xD;
+&#xD;
+EN&#xD;
+Pydio Cells server.&#xD;
+Need a mariadb/mysql database to connect during initial installation.&#xD;
+Visit the url for initial installation.</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>https://[IP]:[PORT:7474]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://developer.asustor.com/uploadIcons/0020_117518_1637817929_PydioCells_256.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1731618984</DateInstalled>
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>pydio-cells</Name>
+  <Repository>pydio/cells</Repository>
+  <Registry>pydio/cells</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://pydio.com/en/docs/cells/v2/docker</Project>
+  <Overview>FR&#xD;
+Serveur Pydio Cells.&#xD;
+N&#xE9;cessite une base de donn&#xE9;es mysql/mariadb.&#xD;
+Apr&#xE9;s lancement allez visiter la webui pour faire l'installation.&#xD;
+&#xD;
+EN&#xD;
+Pydio Cells server.&#xD;
+Need a mariadb/mysql database to connect during initial installation.&#xD;
+Visit the url for initial installation.</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>https://[IP]:[PORT:7474]/</WebUI>
+  <TemplateURL/>
+  <Icon>https://developer.asustor.com/uploadIcons/0020_117518_1637817929_PydioCells_256.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1731618984</DateInstalled>
+  <DonateText/>
+  <DonateLink/>
+  <Requires/>
+  <Config Name="/var/cells" Target="/var/cells" Default="" Mode="rw" Description="FR&#13;&#10;Dossier persistant de l'application.&#13;&#10;&#13;&#10;EN&#13;&#10;Persistent folder of the app" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pydio-cells</Config>
+  <Config Name="CELLS_LOG_LEVEL" Target="CELLS_LOG_LEVEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">production</Config>
+  <Config Name="COLLABORASERVER" Target="COLLABORASERVER" Default="" Mode="" Description="FR&#13;&#10;Si activ&#xE9; tu peux indiquer l'url d'un serveur collabora/code&#13;&#10;&#13;&#10;EN&#13;&#10;If enable you can set your collabora/code serveur url" Type="Variable" Display="always" Required="false" Mask="false">http://collabora-code:9980</Config>
+  <Config Name="CELLS_MINIO_ALLOW_CROSSMOUNT" Target="CELLS_MINIO_ALLOW_CROSSMOUNT" Default="" Mode="" Description="FR&#13;&#10;Apparemment servirait pour permettre de cr&#xE9;er un Datasource de dossier existants &#13;&#10;&#13;&#10;EN&#13;&#10;Might needed for adding local folder as Datasource" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="/mnt/user/pydio-cells" Target="/mnt/user/pydio-cells" Default="" Mode="rw" Description="Datasource &amp;gt; +Datasource&#13;&#10;Then add to workspace with permissions" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/pydio-cells</Config>
+  <Config Name="port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7474</Config>
+</Container>
+  <Requires/>
+  <Config Name="/var/cells" Target="/var/cells" Default="" Mode="rw" Description="FR&#13;&#10;Dossier persistant de l'application.&#13;&#10;&#13;&#10;EN&#13;&#10;Persistent folder of the app" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/pydio-cells</Config>
+  <Config Name="CELLS_LOG_LEVEL" Target="CELLS_LOG_LEVEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">production</Config>
+  <Config Name="COLLABORASERVER" Target="COLLABORASERVER" Default="" Mode="" Description="FR&#13;&#10;Si activ&#xE9; tu peux indiquer l'url d'un serveur collabora/code&#13;&#10;&#13;&#10;EN&#13;&#10;If enable you can set your collabora/code serveur url" Type="Variable" Display="always" Required="false" Mask="false">http://collabora-code:9980</Config>
+  <Config Name="CELLS_MINIO_ALLOW_CROSSMOUNT" Target="CELLS_MINIO_ALLOW_CROSSMOUNT" Default="" Mode="" Description="FR&#13;&#10;Apparemment servirait pour permettre de cr&#xE9;er un Datasource de dossier existants &#13;&#10;&#13;&#10;EN&#13;&#10;Might needed for adding local folder as Datasource" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="/mnt/user/pydio-cells" Target="/mnt/user/pydio-cells" Default="" Mode="rw" Description="Datasource &amp;gt; +Datasource&#13;&#10;Then add to workspace with permissions" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/pydio-cells</Config>
+  <Config Name="port" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">7474</Config>
+</Container>
