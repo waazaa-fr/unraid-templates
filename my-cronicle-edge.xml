@@ -7,6 +7,9 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
+  <Changes>
+  Correct repository namespace
+  </Changes>
   <Support>https://github.com/soulteary/docker-cronicle/issues</Support>
   <Project>https://github.com/jhuckaby/Cronicle</Project>
   <Overview>Cronicle is a multi-server task scheduler and runner, with a web based front-end UI. It handles both scheduled, repeating and on-demand jobs, targeting any number of worker servers, with real-time stats and live log viewer. It's basically a fancy Cron replacement written in Node.js. You can give it simple shell commands, or write Plugins in virtually any language. A huge thank you to github.com/jhuckab for the Cronicle project and github.com/soulteary for the container!</Overview>
