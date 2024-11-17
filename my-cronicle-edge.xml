@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>croniclev2</Name>
-  <Repository>waazaa-fr/cronicle-dev:master</Repository>
+  <Repository>waazaafr/cronicle-edge:latest</Repository>
   <Registry>https://hub.docker.com/r/soulteary/cronicle</Registry>
   <Network>bridge</Network>
   <MyIP/>
