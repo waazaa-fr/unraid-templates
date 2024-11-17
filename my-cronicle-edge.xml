@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>croniclev2</Name>
+  <Repository>waazaa-fr/cronicle-dev:master</Repository>
+  <Registry>https://hub.docker.com/r/soulteary/cronicle</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://github.com/soulteary/docker-cronicle/issues</Support>
+  <Project>https://github.com/jhuckaby/Cronicle</Project>
+  <Overview>Cronicle is a multi-server task scheduler and runner, with a web based front-end UI. It handles both scheduled, repeating and on-demand jobs, targeting any number of worker servers, with real-time stats and live log viewer. It's basically a fancy Cron replacement written in Node.js. You can give it simple shell commands, or write Plugins in virtually any language. A huge thank you to github.com/jhuckab for the Cronicle project and github.com/soulteary for the container!</Overview>
+  <Category>Productivity:</Category>
+  <WebUI>http://[IP]:[PORT:3012]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/brianmiller/docker-templates/master/cronicle/cronicle.xml</TemplateURL>
+  <Icon>https://github.com/brianmiller/docker-templates/raw/master/cronicle/cronicle.png</Icon>
+  <ExtraParams>--dns=1.1.1.1 --hostname=unraid</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1731802773</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="Web Interface Port" Target="3012" Default="3012" Mode="tcp" Description="The port cronicle will listen on." Type="Port" Display="always" Required="true" Mask="{8}">3013</Config>
+  <Config Name="Stateful Data Path" Target="/opt/cronicle/data" Default="/mnt/user/appdata/cronicle/data" Mode="rw" Description="Internal Container Path: /opt/cronicle/data" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/cronicle-v2/data</Config>
+  <Config Name="Stateful Logs Path" Target="/opt/cronicle/logs" Default="/mnt/user/appdata/cronicle/logs" Mode="rw" Description="Internal Container Path: /opt/cronicle/logs" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/cronicle-v2/logs</Config>
+  <Config Name="Stateful Plugins Path" Target="/opt/cronicle/plugins" Default="/mnt/user/appdata/cronicle/plugins" Mode="rw" Description="Internal Container Path: /opt/cronicle/plugins" Type="Path" Display="always" Required="true" Mask="false">/mnt/user/appdata/cronicle-v2/plugins</Config>
+  <Config Name="WORKER_ONLY" Target="WORKER_ONLY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+</Container>
