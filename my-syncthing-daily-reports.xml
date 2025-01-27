@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>syncthing-daily-reports</Name>
+  <Repository>waazaafr/syncthing-daily-reports:latest</Repository>
+  <Registry>waazaafr/syncthing-daily-reports:latest</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/r/waazaafr/syncthing-daily-reports</Project>
+  <Overview>FR&#xD;
+Recevoir des rapports quotidiens si votre SyncThing a des dossiers inactifs depuis X jours.&#xD;
+Permet d'&#xEA;tre inform&#xE9; en cas d'inactivit&#xE9;.&#xD;
+&#xD;
+EN&#xD;
+Be informed about inactivity on your SyncThing synced folders after X days.</Overview>
+  <Category>Other:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/syncthing-daily-reports.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1737900057</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/syncthing-daily-reports/config/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/syncthing-daily-reports/config/</Config>
+  <Config Name="/logs" Target="/logs" Default="/mnt/user/appdata/syncthing-daily-reports/logs/" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/syncthing-daily-reports/logs/</Config>
+  <Config Name="SYNCTHING_URL" Target="SYNCTHING_URL" Default="http://syncthing" Mode="" Description="Syncthing url" Type="Variable" Display="always" Required="false" Mask="false">http://syncthing</Config>
+  <Config Name="SYNCTHING_API_KEY" Target="SYNCTHING_API_KEY" Default="xxxxxxxx" Mode="" Description="Syncthing API key" Type="Variable" Display="always" Required="false" Mask="false">xxxxxxxx</Config>
+  <Config Name="SYNCTHING_DAYS_INACTIVE" Target="SYNCTHING_DAYS_INACTIVE" Default="30" Mode="" Description="How many days before marked as inactive" Type="Variable" Display="always" Required="false" Mask="false">30</Config>
+  <Config Name="SMTP_ENABLE" Target="SMTP_ENABLE" Default="true" Mode="" Description="Enable or not email report" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
+  <Config Name="SMTP_SERVER" Target="SMTP_SERVER" Default="mail.domain.com" Mode="" Description="SMTP server" Type="Variable" Display="always" Required="false" Mask="false">mail.domain.com</Config>
+  <Config Name="SMTP_PORT" Target="SMTP_PORT" Default="587" Mode="" Description="SMTP port" Type="Variable" Display="always" Required="false" Mask="false">587</Config>
+  <Config Name="SMTP_USERNAME" Target="SMTP_USERNAME" Default="you@example.com" Mode="" Description="SMTP username" Type="Variable" Display="always" Required="false" Mask="false">you@example.com</Config>
+  <Config Name="SMTP_PASSWORD" Target="SMTP_PASSWORD" Default="xxxxxxxx" Mode="" Description="SMTP password" Type="Variable" Display="always" Required="false" Mask="false">xxxxxxxx</Config>
+  <Config Name="SMTP_SENDER" Target="SMTP_SENDER" Default="you@example.com" Mode="" Description="SMTP sender" Type="Variable" Display="always" Required="false" Mask="false">you@example.com</Config>
+  <Config Name="SMTP_RECEIVER" Target="SMTP_RECEIVER" Default="you@example.com" Mode="" Description="SMTP receiver" Type="Variable" Display="always" Required="false" Mask="false">you@example.com</Config>
+  <Config Name="GOTIFY_ENABLE" Target="GOTIFY_ENABLE" Default="false" Mode="" Description="Enable or not Gotify notification" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="GOTIFY_URL" Target="GOTIFY_URL" Default="http://gotify" Mode="" Description="Gotify url" Type="Variable" Display="always" Required="false" Mask="false">http://gotify</Config>
+  <Config Name="GOTIFY_TOKEN" Target="GOTIFY_TOKEN" Default="xxxxxx" Mode="" Description="Gotify app token" Type="Variable" Display="always" Required="false" Mask="false">xxxxxx</Config>
+  <Config Name="DISCORD_ENABLE" Target="DISCORD_ENABLE" Default="false" Mode="" Description="Enable or not Discord webhook" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="DISCORD_WEBHOOK" Target="DISCORD_WEBHOOK" Default="https://discordapp.com/api/webhooks/xxxxxx" Mode="" Description="Discord webhook url" Type="Variable" Display="always" Required="false" Mask="false">https://discordapp.com/api/webhooks/xxxxxx</Config>
+  <TailscaleStateDir/>
+</Container>
