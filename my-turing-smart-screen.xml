@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>turing-smart-screen</Name>
-  <Repository>waazaafr/turing-smart-screen:latest</Repository>
+  <Repository>waazaafr/turing-smart-screen:testing</Repository>
   <Registry>waazaafr/turing-smart-screen:latest</Registry>
   <Network>host</Network>
   <MyIP/>
@@ -52,4 +52,5 @@ You can take the name of a folder inside /app/res/themes and set it up to the TH
   <Config Name="REVISION" Target="REVISION" Default="A" Mode="" Description="To identify your smart screen: https://github.com/mathoudebine/turing-smart-screen-python/wiki/Hardware-revisions" Type="Variable" Display="always" Required="false" Mask="false">A</Config>
   <Config Name="BRIGHTNESS" Target="BRIGHTNESS" Default="20" Mode="" Description="Percent of the brightness" Type="Variable" Display="always" Required="false" Mask="false">40</Config>
   <Config Name="DISPLAY_REVERSE" Target="DISPLAY_REVERSE" Default="false" Mode="" Description="If true the video result will be in landscape mode" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="VERSION" Target="VERSION" Default="3.9.1" Mode="" Description="Version of the release needed" Type="Variable" Display="always" Required="false" Mask="false">3.9.1</Config>
 </Container>
