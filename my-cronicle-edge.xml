@@ -1,24 +1,27 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>croniclev2</Name>
-  <Repository>waazaafr/cronicle-edge:latest</Repository>
+  <Repository>ghcr.io/cronicle-edge/cronicle-edge:latest</Repository>
   <Registry>https://hub.docker.com/r/soulteary/cronicle</Registry>
   <Network>bridge</Network>
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Changes>
-  Correct repository namespace
+### 2025-07-17
+- Bump cronicle-edge latest
+
+Correct repository namespace
   </Changes>
   <Support>https://github.com/soulteary/docker-cronicle/issues</Support>
   <Project>https://github.com/jhuckaby/Cronicle</Project>
   <Overview>Cronicle is a multi-server task scheduler and runner, with a web based front-end UI. It handles both scheduled, repeating and on-demand jobs, targeting any number of worker servers, with real-time stats and live log viewer. It's basically a fancy Cron replacement written in Node.js. You can give it simple shell commands, or write Plugins in virtually any language. A huge thank you to github.com/jhuckab for the Cronicle project and github.com/soulteary for the container!</Overview>
   <Category>Productivity:</Category>
   <WebUI>http://[IP]:[PORT:3012]</WebUI>
-  <TemplateURL>https://raw.githubusercontent.com/brianmiller/docker-templates/master/cronicle/cronicle.xml</TemplateURL>
+  <TemplateURL>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/master/my-cronicle-edge.xml</TemplateURL>
   <Icon>https://github.com/brianmiller/docker-templates/raw/master/cronicle/cronicle.png</Icon>
   <ExtraParams>--dns=1.1.1.1 --hostname=unraid</ExtraParams>
-  <PostArgs/>
+  <PostArgs>manager</PostArgs>
   <CPUset/>
   <DateInstalled>1731802773</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
