@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>kuvasz</Name>
+  <Repository>kuvaszmonitoring/kuvasz:latest</Repository>
+  <Registry>kuvaszmonitoring/kuvasz:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/kuvasz-uptime/kuvasz</Project>
+  <Overview>Kuvasz [&#x2C8;kuv&#x252;s], an open-source, self-hosted uptime &amp;amp; SSL monitoring service, designed to help you keep track of your websites and services. It provides a modern, user-friendly interface, a powerful REST API, and supports multiple notification channels like email, Discord, Slack, Telegram, and PagerDuty.&#xD;
+</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://cdn.jsdelivr.net/gh/selfhst/icons/png/kuvasz.png</Icon>
+  <ExtraParams>--restart=always</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1754244144</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires>You must create /mnt/user/appdata/kuvasz/config.yml file regarding documentation:&#xD;
+https://kuvasz-uptime.dev/setup/installation/&#xD;
+&#xD;
+There is another variables, see doc:&#xD;
+https://kuvasz-uptime.dev/setup/configuration/#__tabbed_2_2</Requires>
+  <Config Name="PORT" Target="8080" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="/config/kuvasz.yml" Target="/config/kuvasz.yml" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/kuvasz/config.yml</Config>
+  <Config Name="DATABASE_HOST" Target="DATABASE_HOST" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">postgres</Config>
+  <Config Name="DATABASE_USER" Target="DATABASE_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">user</Config>
+  <Config Name="DATABASE_PASSWORD" Target="DATABASE_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="ADMIN_USER" Target="ADMIN_USER" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">user</Config>
+  <Config Name="ADMIN_PASSWORD" Target="ADMIN_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="ADMIN_API_KEY" Target="ADMIN_API_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">jkdsfdsfvezjfbdsjcndslvnkslkfdsfdsqbvkdsv</Config>
+  <TailscaleStateDir/>
+</Container>
