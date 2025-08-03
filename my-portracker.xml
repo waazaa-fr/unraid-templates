@@ -1,0 +1,44 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>portracker</Name>
+  <Repository>mostafawahied/portracker:latest</Repository>
+  <Registry>mostafawahied/portracker:latest</Registry>
+  <Network>host</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/Mostafa-Wahied/portracker</Project>
+  <Overview>A self-hosted, real-time port monitoring and discovery tool.&#xD;
+&#xD;
+By auto-discovering services on your systems, portracker provides a live, accurate map of your network. It helps eliminate manual tracking in spreadsheets and prevents deployment failures caused by port conflicts.&#xD;
+&#xD;
+Key Features&#xD;
+- Automatic Port Discovery: Scans the host system to find and display running services and their ports automatically. No manual data entry is needed.&#xD;
+- Platform-Specific Collectors: Includes specialized collectors for Docker and TrueNAS to gather rich, contextual information from the host.&#xD;
+- Lightweight &amp;amp; Self-Contained: Runs as a single process with an embedded SQLite database. No external database dependencies like PostgreSQL or Redis are required.&#xD;
+- Peer-to-Peer Monitoring: Add other portracker instances as peers to view all your servers, containers, and VMs from a single dashboard.&#xD;
+- Hierarchical Grouping: Organize servers in a parent-child structure, perfect for nesting servers, e.g. a VM's portracker instance under its physical host.&#xD;
+- Enhanced TrueNAS Discovery: Providing an optional TrueNAS API key allows portracker to discover running VMs* and gather enhanced system information like the OS version and uptime.&#xD;
+- Modern &amp;amp; Responsive UI: A clean dashboard with light/dark modes, live filtering, and multiple data layout views (list, grid, table).</Overview>
+  <Category>Productivity: Security: Tools:</Category>
+  <WebUI>http://[IP]:[PORT:4999]</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.image-heberg.fr/files/17542413282728506997.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1754241781</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="/var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="APPDATA" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/portracker/data</Config>
+  <Config Name="PORT" Target="4999" Default="4999" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">4999</Config>
+  <Config Name="DATABASE_PATH" Target="DATABASE_PATH" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/data/portracker.db</Config>
+  <Config Name="CACHE_TIMEOUT_MS" Target="CACHE_TIMEOUT_MS" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">60000</Config>
+  <Config Name="DISABLE_CACHE" Target="DISABLE_CACHE" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="INCLUDE_UDP" Target="INCLUDE_UDP" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="DEBUG" Target="DEBUG" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <TailscaleStateDir/>
+</Container>
