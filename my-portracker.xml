@@ -24,7 +24,7 @@ Key Features&#xD;
   <Category>Productivity: Security: Tools:</Category>
   <WebUI>http://[IP]:[PORT:4999]</WebUI>
   <TemplateURL/>
-  <Icon>https://www.image-heberg.fr/files/17542413282728506997.png</Icon>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/portracker-logo.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
