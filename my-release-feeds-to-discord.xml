@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
   <Project/>
   <Overview>Envoi des derni&#xE8;res releases d'image docker vers webhook discord.</Overview>
   <Category/>
