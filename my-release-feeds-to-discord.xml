@@ -23,6 +23,8 @@
   <Requires/>
   <Config Name="PORT" Target="6543" Default="6543" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6543</Config>
   <Config Name="APP_PASSWORD" Target="APP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">info</Config>
+  <Config Name="APP_SECRET_KEY" Target="APP_SECRET_KEY" Default="thisisabsolutelyfantastichetohaveamogwaiathome" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">thisisabsolutelyfantastichetohaveamogwaiathome</Config>
   <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/release-feeds-to-discord/config</Config>
   <Config Name="/logs" Target="/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/release-feeds-to-discord/logs</Config>
   <TailscaleStateDir/>
