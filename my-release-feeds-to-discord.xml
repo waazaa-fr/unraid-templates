@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>release-feeds-to-discord</Name>
+  <Repository>waazaafr/release-feeds-to-docker:latest</Repository>
+  <Registry>waazaafr/release-feeds-to-docker:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project/>
+  <Overview>Envoi des derni&#xE8;res releases d'image docker vers webhook discord.</Overview>
+  <Category/>
+  <WebUI>http://[IP]:6543</WebUI>
+  <TemplateURL/>
+  <Icon>https://codeberg.org/waazaa/release-feeds-to-discord/raw/branch/main/logo.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1754488663</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="6543" Default="6543" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">6543</Config>
+  <Config Name="APP_PASSWORD" Target="APP_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">password</Config>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/release-feeds-to-discord/config</Config>
+  <Config Name="/logs" Target="/logs" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/release-feeds-to-discord/logs</Config>
+  <TailscaleStateDir/>
+</Container>
