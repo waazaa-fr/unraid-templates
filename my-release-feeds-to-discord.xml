@@ -8,7 +8,7 @@
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
   <Support>https://discord.gg/p9xkjEw8ts</Support>
-  <Project/>
+  <Project>https://codeberg.org/waazaa/release-feeds-to-discord</Project>
   <Overview>Envoi des derni&#xE8;res releases d'image docker vers webhook discord.</Overview>
   <Category/>
   <WebUI>http://[IP]:6543</WebUI>
