@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <Container version="2">
   <Name>release-feeds-to-discord</Name>
-  <Repository>waazaafr/release-feeds-to-docker:latest</Repository>
+  <Repository>waazaafr/release-feeds-to-discord:latest</Repository>
   <Registry>waazaafr/release-feeds-to-discord:latest</Registry>
   <Network>bridge</Network>
   <MyIP/>
