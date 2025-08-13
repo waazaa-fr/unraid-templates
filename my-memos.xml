@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>memos</Name>
+  <Repository>neosmemo/memos:stable</Repository>
+  <Registry>neosmemo/memos:stable</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/usememos/memos</Project>
+  <Overview>A modern, open-source, self-hosted knowledge management and note-taking platform designed for privacy-conscious users and organizations. &#xD;
+Memos provides a lightweight yet powerful solution for capturing, organizing, and sharing thoughts with comprehensive Markdown support and cross-platform accessibility.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:5230]</WebUI>
+  <TemplateURL/>
+  <Icon>https://camo.githubusercontent.com/aa5a8cac358e3448ef7bad80fc178699841913ec438ed0ddfe18f867f931d7ee/68747470733a2f2f7777772e7573656d656d6f732e636f6d2f6c6f676f2d726f756e6465642e706e67</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1755129263</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="APPDATA" Target="/var/opt/memos" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/memos</Config>
+  <Config Name="PORT" Target="5230" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">5230</Config>
+  <Config Name="MEMOS_PORT" Target="MEMOS_PORT" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">5230</Config>
+  <Config Name="MEMOS_MODE" Target="MEMOS_MODE" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">prod</Config>
+  <TailscaleStateDir/>
+</Container>
