@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>berb</Name>
+  <Repository>waazaafr/berb:latest</Repository>
+  <Registry>waazaafr/berb:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/nihaocami/berb</Project>
+  <Overview>Berb is a lightweight, privacy-first web app for sending files directly from one device to another using WebRTC. &#xD;
+No servers. No uploads. Just you, your file, and the person you want to send it to.</Overview>
+  <Category>Cloud:</Category>
+  <WebUI>http://[IP]:[PORT:3000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/berb.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1755197024</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="3000" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3000</Config>
+  <Config Name="APPDATA" Target="/app" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/berb</Config>
+  <TailscaleStateDir/>
+</Container>
