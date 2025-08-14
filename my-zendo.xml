@@ -1,0 +1,29 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>zendo</Name>
+  <Repository>ghcr.io/rishikanthc/zendo:v0.2.0</Repository>
+  <Registry>ghcr.io/rishikanthc/zendo:v0.2.0</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/rishikanthc/zendo</Project>
+  <Overview>ZenDo is a minimalistic task manager that is based on weekly planning. It&#x2019;s a very simple and straightforward to use task manager that allows you to plan your week by assigning tasks to specific days.&#xD;
+&#xD;
+ZenDo is dead simple to use. It features a very simple and beautiful UI. Simply assign tasks to days of the week. ZenDo also has PWA support, allowing you to install and use ZenDo as an app on desktop and mobile platforms.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/zendo.png</Icon>
+  <ExtraParams>--user="99:100"</ExtraParams>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1755179317</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="8080" Default="8080" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="/app/storage" Target="/app/storage" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/zendo/config/</Config>
+  <TailscaleStateDir/>
+</Container>
