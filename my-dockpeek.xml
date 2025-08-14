@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>dockpeek</Name>
+  <Repository>ghcr.io/dockpeek/dockpeek:latest</Repository>
+  <Registry>ghcr.io/dockpeek/dockpeek:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/dockpeek/dockpeek</Project>
+  <Overview>Dockpeek is a lightweight, self-hosted Docker dashboard that allows you to view and access exposed container ports with a clean, click-to-access interface. It supports both local Docker sockets and remote hosts via socket-proxy, making it easy to manage multiple Docker environments from a single place. &#xD;
+Additionally, Dockpeek includes built-in image update checking, so you can easily see if newer versions of your container images are available.&#xD;
+&#xD;
+Key Features&#xD;
+Port Mapping Overview &#x2013; Quickly see all running containers and their exposed ports.&#xD;
+Click-to-Access URLs &#x2013; Open containerized web apps instantly with a single click.&#xD;
+Multi-Host Support &#x2013; Manage multiple Docker hosts and sockets within one dashboard.&#xD;
+Zero Configuration &#x2013; Automatically detects running containers with no setup required.&#xD;
+Image Update Checking &#x2013; Monitor available updates for your container images.</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8000]</WebUI>
+  <TemplateURL/>
+  <Icon>https://www.image-heberg.fr/files/17551300161912898480.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1755129849</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="8000" Default="8000" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8000</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">gdfgdfgdfdfbfdgdfgdfgdfgdfgdfqgfbdfbedvf</Config>
+  <Config Name="USERNAME" Target="USERNAME" Default="admin" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="PASSWORD" Target="PASSWORD" Default="admin" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="/var/run/docker.sock" Target="/var/run/docker.sock" Default="/var/run/docker.sock" Mode="ro" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <TailscaleStateDir/>
+</Container>
