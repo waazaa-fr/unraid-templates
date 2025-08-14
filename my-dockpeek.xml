@@ -21,7 +21,7 @@ Image Update Checking &#x2013; Monitor available updates for your container imag
   <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:8000]</WebUI>
   <TemplateURL/>
-  <Icon>https://www.image-heberg.fr/files/17551300161912898480.png</Icon>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/dockpeek.png</Icon>
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
