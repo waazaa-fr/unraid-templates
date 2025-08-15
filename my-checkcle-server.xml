@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>checkcle-server</Name>
+  <Repository>operacle/checkcle:latest</Repository>
+  <Registry>operacle/checkcle:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/operacle/checkcle</Project>
+  <Overview>CheckCle is an Open Source solution for seamless, real-time monitoring of full-stack systems, applications, and infrastructure. It provides developers, sysadmins, and DevOps teams with deep insights and actionable data across every layer of their environment&#x2014;whether it's servers, applications, or services. With CheckCle, you gain visibility, control, and the ability to ensure optimal performance throughout your entire technology stack.&#xD;
+&#xD;
+&#xD;
+Default user:&#xD;
+User: admin@example.com &#xD;
+Passwd: Admin123456</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8090]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/JamsRepos/Unraid-Templates/master/logos/checkcle-monitoring-agent.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1755265597</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="8090" Default="8090" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8090</Config>
+  <Config Name="APPDATA" Target="/mnt/pb_data" Default="/mnt/user/appdata/checkcle-server" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/checkcle-server</Config>
+  <TailscaleStateDir/>
+</Container>
