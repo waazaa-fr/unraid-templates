@@ -24,7 +24,8 @@ No more third-party dependencies or worrying about pesky limits and steep fees!<
   <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
-  <Config Name="PORT" Target="5487" Default="" Mode="tcp" Description="Web interface" Type="Port" Display="always" Required="false" Mask="false">5487</Config>
+  <Config Name="PORT" Target="5487" Default="5487" Mode="tcp" Description="Web interface" Type="Port" Display="always" Required="false" Mask="false">5487</Config>
+  <Config Name="PORT" Target="3333" Default="3333" Mode="tcp" Description="API" Type="Port" Display="always" Required="false" Mask="false">3333</Config>
   <Config Name="ENCRYPTION_KEY" Target="ENCRYPTION_KEY" Default="" Mode="" Description="Required only if encryption is enabled. 32 chars minimum" Type="Variable" Display="always" Required="false" Mask="false">fezfdfgdsdsfsfzhtrjhytrjfgbvzsefzegfghjytjbdfvdefzfsdvfdsvfeE</Config>
   <Config Name="SECURE_SITE" Target="SECURE_SITE" Default="" Mode="" Description="Set to true if you are using a reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
   <Config Name="ENABLE_S3" Target="ENABLE_S3" Default="" Mode="" Description="Set to true to enable S3-compatible storage" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
