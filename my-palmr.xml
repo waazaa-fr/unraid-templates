@@ -27,13 +27,11 @@ No more third-party dependencies or worrying about pesky limits and steep fees!<
   <Config Name="PORT" Target="5487" Default="" Mode="tcp" Description="Web interface" Type="Port" Display="always" Required="false" Mask="false">5487</Config>
   <Config Name="ENCRYPTION_KEY" Target="ENCRYPTION_KEY" Default="" Mode="" Description="Required only if encryption is enabled. 32 chars minimum" Type="Variable" Display="always" Required="false" Mask="false">fezfdfgdsdsfsfzhtrjhytrjfgbvzsefzegfghjytjbdfvdefzfsdvfdsvfeE</Config>
   <Config Name="SECURE_SITE" Target="SECURE_SITE" Default="" Mode="" Description="Set to true if you are using a reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">true</Config>
-  <Config Name="Temp Folder" Target="/app/server/temp-uploads/" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/palmr/temp-uploads/</Config>
-  <Config Name="Storage Folder" Target="/app/server/uploads" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/palmr/uploads/</Config>
   <Config Name="ENABLE_S3" Target="ENABLE_S3" Default="" Mode="" Description="Set to true to enable S3-compatible storage" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
   <Config Name="DISABLE_FILESYSTEM_ENCRYPTION" Target="DISABLE_FILESYSTEM_ENCRYPTION" Default="" Mode="" Description="Set to false to enable file encryption" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
   <Config Name="PALMR_UID" Target="PALMR_UID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
   <Config Name="PALMR_GID" Target="PALMR_GID" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
   <Config Name="DEFAULT_LANGUAGE" Target="DEFAULT_LANGUAGE" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">en_US</Config>
-  <Config Name="/app/server/prisma" Target="/app/server/prisma" Default="" Mode="rw" Description="Config folder" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/palmr/prisma/</Config>
+  <Config Name="/app/server/prisma" Target="/app/server" Default="" Mode="rw" Description="Config folder" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/palmr/</Config>
   <TailscaleStateDir/>
 </Container>
