@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>komodo-client</Name>
+  <Repository>ghcr.io/moghtech/komodo-periphery:latest</Repository>
+  <Registry>ghcr.io/moghtech/komodo-periphery:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://komo.do/docs/setup/connect-servers</Project>
+  <Overview>Connecting UnRAID to Komodo.</Overview>
+  <Category>Tools:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/komodo-512x512.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1755611152</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires>You need your Komodo passkey to associate this with your komodo webui.</Requires>
+  <Config Name="PORT" Target="8120" Default="8120" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8120</Config>
+  <Config Name="PERIPHERY_PASSKEYS" Target="PERIPHERY_PASSKEYS" Default="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" Mode="" Description="Pass the same passkey as used by the Komodo Core connecting to this Periphery agent." Type="Variable" Display="always" Required="false" Mask="false">xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</Config>
+  <Config Name="/var/run/docker.sock" Target="/var/run/docker.sock" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/var/run/docker.sock</Config>
+  <Config Name="/proc" Target="/proc" Default="/proc" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/proc</Config>
+  <Config Name="PERIPHERY_ROOT_DIRECTORY" Target="PERIPHERY_ROOT_DIRECTORY" Default="/etc/komodo" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/etc/komodo</Config>
+  <Config Name="PERIPHERY_SSL_ENABLED" Target="PERIPHERY_SSL_ENABLED" Default="true" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">true</Config>
+  <Config Name="PERIPHERY_DISABLE_TERMINALS" Target="PERIPHERY_DISABLE_TERMINALS" Default="false" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="PERIPHERY_INCLUDE_DISK_MOUNTS" Target="PERIPHERY_INCLUDE_DISK_MOUNTS" Default="/etc/hostname" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">/etc/hostname</Config>
+  <Config Name="/etc/komodo" Target="/etc/komodo" Default="/etc/komodo" Mode="rw" Description="" Type="Path" Display="advanced-hide" Required="false" Mask="false">/etc/komodo</Config>
+  <TailscaleStateDir/>
+</Container>
