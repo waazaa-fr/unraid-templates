@@ -9,8 +9,7 @@
   <Privileged>false</Privileged>
   <Support>https://discord.gg/p9xkjEw8ts</Support>
   <Project>https://discord.gg/p9xkjEw8ts</Project>
-  <Overview>webserver-apache-php8&#xD;
-&#xD;
+  <Overview>
 FR&#xD;
 Image contenant Apache2, PHP 8.2 ainsi qu'un tas de modules utiles.&#xD;
 Si vous mappez un dossier vers /var/www vers un dossier de votre UnRAID (ce qui est par d&#xE9;faut) vous aurez &#xE0; l'int&#xE8;rieur:&#xD;
