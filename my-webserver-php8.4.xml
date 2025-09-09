@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>webserver-php8.4</Name>
+  <Repository>waazaafr/webserver-apache-php8:8.4</Repository>
+  <Registry>https://registry.hub.docker.com/r/waazaafr/webserver-apache-php8</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://discord.gg/p9xkjEw8ts</Project>
+  <Overview>FR&#xD;
+Image contenant Apache2, PHP 8.4 ainsi qu'un tas de modules utiles.&#xD;
+Si vous mappez un dossier vers /var/www vers un dossier de votre UnRAID (ce qui est par d&#xE9;faut) vous aurez &#xE0; l'int&#xE8;rieur:&#xD;
+- cron/ - qui contient un fichier crontab qui peut contenir des t&#xE2;ches cron si vous en avez besoin&#xD;
+- html/ - dossier contenant votre site web&#xD;
+- ini/ - dossier qui contient des fichiers que vous pouvez param&#xE9;trer pour changer des param&#xE8;tres apache ou php&#xD;
+- logs/ - dossier qui contient les logs du serveur&#xD;
+&#xD;
+EN&#xD;
+Image containing Apache2, PHP 8.4, and a bunch of useful modules.&#xD;
+If you map a folder to /var/www from your UnRAID (which is the default), inside you will find:&#xD;
+- cron/ &#x2013; contains a crontab file where you can add cron jobs if needed&#xD;
+- html/ &#x2013; folder containing your website&#xD;
+- ini/ &#x2013; folder containing files you can configure to change Apache or PHP settings&#xD;
+- logs/ &#x2013; folder containing the server logs</Overview>
+  <Category>Tools:Utilities</Category>
+  <WebUI>http://[IP]:[PORT:80]</WebUI>
+  <TemplateURL>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/main/my-webserver-php8.2.xml</TemplateURL>
+  <Icon>https://png.pngtree.com/png-vector/20221029/ourmid/pngtree-web-hosting-server-icon-png-image_6400702.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1757456521</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8583</Config>
+  <Config Name="/var/www" Target="/var/www" Default="/mnt/user/appdata/webserver" Mode="rw" Description="This folder will contains ini/, cron/, html/, logs/ folders" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/webserver-php8.4</Config>
+  <Config Name="PUBLIC_FOLDER" Target="PUBLIC_FOLDER" Default="false" Mode="" Description="If your public site part is on public/ folder set to" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
+  <Config Name="PROXY_EXTERNAL_IPS" Target="PROXY_EXTERNAL_IPS" Default="192.168.1.23" Mode="" Description="IP of your reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.23</Config>
+  <Config Name="PROXY_LOCAL_IPS" Target="PROXY_LOCAL_IPS" Default="" Mode="" Description="IP of your reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.23</Config>
+  <Config Name="TailScale Fallback State Directory" Target="CA_TS_FALLBACK_DIR" Default="/var/www" Mode="{3}" Description="Fallback container directory for tailscale state information - Added By Community Applications" Type="Variable" Display="advanced" Required="{7}" Mask="{8}">/var/www</Config>
+  <TailscaleStateDir/>
+</Container>
