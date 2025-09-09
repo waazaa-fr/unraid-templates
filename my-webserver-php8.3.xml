@@ -31,12 +31,12 @@ If you map a folder to /var/www from your UnRAID (which is the default), inside 
   <ExtraParams/>
   <PostArgs/>
   <CPUset/>
-  <DateInstalled>1757330656</DateInstalled>
+  <DateInstalled>1757456311</DateInstalled>
   <DonateText>Buy me a coffee</DonateText>
   <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
-  <Config Name="PORT" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8787</Config>
-  <Config Name="/var/www" Target="/var/www" Default="/mnt/user/appdata/webserver" Mode="rw" Description="This folder will contains ini/, cron/, html/, logs/ folders" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/webserver</Config>
+  <Config Name="PORT" Target="80" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">8582</Config>
+  <Config Name="/var/www" Target="/var/www" Default="/mnt/user/appdata/webserver" Mode="rw" Description="This folder will contains ini/, cron/, html/, logs/ folders" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/webserver-php8.3</Config>
   <Config Name="PUBLIC_FOLDER" Target="PUBLIC_FOLDER" Default="false" Mode="" Description="If your public site part is on public/ folder set to" Type="Variable" Display="always" Required="false" Mask="false">false</Config>
   <Config Name="PROXY_EXTERNAL_IPS" Target="PROXY_EXTERNAL_IPS" Default="192.168.1.23" Mode="" Description="IP of your reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.23</Config>
   <Config Name="PROXY_LOCAL_IPS" Target="PROXY_LOCAL_IPS" Default="" Mode="" Description="IP of your reverse proxy" Type="Variable" Display="always" Required="false" Mask="false">192.168.1.23</Config>
