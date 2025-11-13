@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>m3u-to-strm</Name>
+  <Repository>waazaafr/m3u-to-strm:latest</Repository>
+  <Registry>waazaafr/m3u-to-strm:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://codeberg.org/waazaa/m3u-to-strm</Project>
+  <Overview>FR&#13;
+Application qui prend un fichier .m3u et extrait les Films et les S&#xE9;ries VOD.&#13;
+Elle organise tout dans des dossiers s&#xE9;par&#xE9;s et cr&#xE9;e des fichiers .strm utilisables par Jellyfin.&#13;
+&#13;
+EN&#13;
+App that reads a .m3u file and extracts VOD Movies and TV Shows.&#13;
+It organizes everything into separate folders and creates .strm files that Jellyfin can use.</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/m3u-to-strm.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1763074874</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="8080" Default="8080" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8080</Config>
+  <Config Name="M3U_URL" Target="M3U_URL" Default="" Mode="" Description="URL of your .m3u" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="/movies" Target="/movies" Default="" Mode="rw" Description="Your target folder for .strm of type Movies" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="/tvshows" Target="/tvshows" Default="" Mode="rw" Description="Your target folder for .strm of type TVShows" Type="Path" Display="always" Required="false" Mask="false"/>
+  <Config Name="JELLYFIN_URL" Target="JELLYFIN_URL" Default="" Mode="" Description="URL of your Jellyfin if you want an update after new medias added" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="JELLYFIN_API_KEY" Target="JELLYFIN_API_KEY" Default="" Mode="" Description="Jellyfin API Key" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GOTIFY_URL" Target="GOTIFY_URL" Default="" Mode="" Description="URL of your Gotify server if you want to receive announces" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="GOTIFY_TOKEN" Target="GOTIFY_TOKEN" Default="" Mode="" Description="Token of your Gotify Server" Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="DEBUG" Mode="" Description="Log level INFO or DEBUG if you want more informations" Type="Variable" Display="always" Required="false" Mask="false">DEBUG</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID of user" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID of user" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
+  <Config Name="/config" Target="/config" Default="/mnt/user/appdata/m3u-to-strm/" Mode="rw" Description="Folder containing the config.json of the application" Type="Path" Display="advanced-hide" Required="false" Mask="false">/mnt/user/appdata/m3u-to-strm/</Config>
+  <Config Name="INTERVAL" Target="INTERVAL" Default="3600" Mode="" Description="Interval in second between two scans" Type="Variable" Display="advanced-hide" Required="false" Mask="false">3600</Config>
+  <Config Name="DRY_RUN" Target="DRY_RUN" Default="false" Mode="" Description="If true it will not create .strm only folders." Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <TailscaleStateDir>/config/.tailscale</TailscaleStateDir>
+</Container>
