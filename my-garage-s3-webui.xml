@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>garage-s3-webui</Name>
+  <Repository>khairul169/garage-webui:latest</Repository>
+  <Registry>khairul169/garage-webui:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://github.com/khairul169/garage-webui</Project>
+  <Overview>Garage S3 WebUI</Overview>
+  <Category/>
+  <WebUI>http://[IP]:3909</WebUI>
+  <TemplateURL/>
+  <Icon>https://images.waazaa.fr/i/346c634b-e81b-4fa3-8aab-673b81843b64.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1766163717</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="3909" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3909</Config>
+  <Config Name="API_BASE_URL" Target="API_BASE_URL" Default="" Mode="" Description="Set this to your current webui url" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.40:3903</Config>
+  <Config Name="S3_ENDPOINT_URL" Target="S3_ENDPOINT_URL" Default="" Mode="" Description="You garage S3 API url" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.40:9000</Config>
+  <Config Name="API_ADMIN_KEY" Target="API_ADMIN_KEY" Default="change_this_to_an_hard_one" Mode="" Description="The corresponding admin_token in garage.toml" Type="Variable" Display="always" Required="false" Mask="false">change_this_to_an_hard_one</Config>
+  <Config Name="S3_REGION" Target="S3_REGION" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">garage</Config>
+  <TailscaleStateDir/>
+</Container>
