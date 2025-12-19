@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>garage-s3-simple</Name>
+  <Repository>waazaafr/garage-s3-simple:latest</Repository>
+  <Registry>waazaafr/garage-s3-simple:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>bash</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/r/waazaafr/garage-s3-simple</Project>
+  <Overview/>
+  <Category>Backup: Cloud:</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://images.waazaa.fr/i/346c634b-e81b-4fa3-8aab-673b81843b64.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1766160606</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="/meta" Target="/meta" Default="/mnt/user/appdata/garage-s3-simple/meta" Mode="rw" Description="Storage of the metadatas, good benefits on pool." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/garage-s3-simple/meta</Config>
+  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="Warning: This directory will contain the S3 data to be stored. Make sure you have enough space. You can point directly to a /mnt/diskX if you want a storage limit." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/garage-s3-simple/data</Config>
+  <Config Name="RPC API S3" Target="9000" Default="9000" Mode="tcp" Description="RPC API S3 internal." Type="Port" Display="always" Required="false" Mask="false">9000</Config>
+  <Config Name="RPC between nodes" Target="3901" Default="" Mode="tcp" Description="Port for distributed data between nodes." Type="Port" Display="always" Required="false" Mask="false">3901</Config>
+  <Config Name="S3 web interface" Target="3902" Default="3902" Mode="tcp" Description="S3 web port for website bucket" Type="Port" Display="always" Required="false" Mask="false">3902</Config>
+  <Config Name="Admin API" Target="3903" Default="3903" Mode="tcp" Description="Admin API port if you use garage WebUI container." Type="Port" Display="always" Required="false" Mask="false">3903</Config>
+  <Config Name="GATEWAY" Target="GATEWAY" Default="0.0.0.0" Mode="" Description="Point to your container ip." Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0</Config>
+  <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="" Mode="" Description="Auto-generated in first boot on your garage.toml but set it up after that here." Type="Variable" Display="always" Required="false" Mask="false"/>
+  <Config Name="REPLICATION_FACTOR" Target="REPLICATION_FACTOR" Default="" Mode="" Description="The replication factor. RTFM." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
+  <Config Name="CONSISTENCY_MODE" Target="CONSISTENCY_MODE" Default="" Mode="" Description="Can be consistent, degraded or dangerous. RTFM" Type="Variable" Display="always" Required="false" Mask="false">degraded</Config>
+  <Config Name="ADMIN_TOKEN" Target="ADMIN_TOKEN" Default="" Mode="" Description="If you use WebUI garage container for example it is needed." Type="Variable" Display="always" Required="false" Mask="false">change_this_to_an_hard_one</Config>
+  <Config Name="/config" Target="/config" Default="" Mode="rw" Description="Will contains your garage.toml file." Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/garage-s3-simple/</Config>
+  <TailscaleStateDir/>
+</Container>
