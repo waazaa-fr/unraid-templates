@@ -19,7 +19,7 @@ Garage est un logiciel de stockage d&#x2019;objets distribu&#xE9;, l&#xE9;ger et
   <Category>Backup: Cloud:</Category>
   <WebUI/>
   <TemplateURL/>
-  <Icon>https://images.waazaa.fr/i/346c634b-e81b-4fa3-8aab-673b81843b64.png</Icon>
+  <Icon>https://git.deuxfleurs.fr/ragazenta/garage/media/tag/v0.4.0/doc/logo/garage.png</Icon>
   <ExtraParams>--cap-add=NET_ADMIN --cap-add=SYS_MODULE </ExtraParams>
   <PostArgs/>
   <CPUset/>
