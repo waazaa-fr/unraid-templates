@@ -22,7 +22,7 @@
   <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
   <Requires/>
   <Config Name="PORT" Target="3909" Default="" Mode="tcp" Description="" Type="Port" Display="always" Required="false" Mask="false">3909</Config>
-  <Config Name="API_BASE_URL" Target="API_BASE_URL" Default="" Mode="" Description="Set this to your current webui url" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.40:3903</Config>
+  <Config Name="API_BASE_URL" Target="API_BASE_URL" Default="" Mode="" Description="Set this to your url on garage.toml" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.40:3903</Config>
   <Config Name="S3_ENDPOINT_URL" Target="S3_ENDPOINT_URL" Default="" Mode="" Description="You garage S3 API url" Type="Variable" Display="always" Required="false" Mask="false">http://192.168.1.40:9000</Config>
   <Config Name="API_ADMIN_KEY" Target="API_ADMIN_KEY" Default="change_this_to_an_hard_one" Mode="" Description="The corresponding admin_token in garage.toml" Type="Variable" Display="always" Required="false" Mask="false">change_this_to_an_hard_one</Config>
   <Config Name="S3_REGION" Target="S3_REGION" Default="" Mode="" Description="" Type="Variable" Display="advanced-hide" Required="false" Mask="false">garage</Config>
