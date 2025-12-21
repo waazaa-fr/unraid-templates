@@ -9,7 +9,13 @@
   <Privileged>false</Privileged>
   <Support>https://discord.gg/p9xkjEw8ts</Support>
   <Project>https://hub.docker.com/r/waazaafr/garage-s3-simple</Project>
-  <Overview/>
+  <Overview>EN&#13;
+Garage is a distributed object storage system that is lightweight, self&#x2011;hostable, and compatible with Amazon&#x2019;s S3 API, designed to replicate data across multiple nodes and locations for resilience while remaining simple to deploy and operate.&#13;
+&#13;
+FR&#13;
+Garage est un logiciel de stockage d&#x2019;objets distribu&#xE9;, l&#xE9;ger et auto&#x2011;h&#xE9;bergeable, compatible avec l&#x2019;API S3 d&#x2019;Amazon, con&#xE7;u pour r&#xE9;pliquer les donn&#xE9;es sur plusieurs n&#x153;uds et sites pour la r&#xE9;silience tout en restant simple &#xE0; d&#xE9;ployer et &#xE0; op&#xE9;rer.&#13;
+&#13;
+  </Overview>
   <Category>Backup: Cloud:</Category>
   <WebUI/>
   <TemplateURL/>
