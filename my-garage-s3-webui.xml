@@ -11,7 +11,7 @@
   <Project>https://github.com/khairul169/garage-webui</Project>
   <Overview>Garage S3 WebUI</Overview>
   <Category>Backup: Cloud:</Category>
-  <WebUI>http://[IP]:[PORT]</WebUI>
+  <WebUI>http://[IP]:[PORT:3909]</WebUI>
   <TemplateURL/>
   <Icon>https://git.deuxfleurs.fr/ragazenta/garage/media/tag/v0.4.0/doc/logo/garage.png</Icon>
   <ExtraParams/>
