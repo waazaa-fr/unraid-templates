@@ -10,8 +10,8 @@
   <Support>https://discord.gg/p9xkjEw8ts</Support>
   <Project>https://github.com/khairul169/garage-webui</Project>
   <Overview>Garage S3 WebUI</Overview>
-  <Category/>
-  <WebUI>http://[IP]:3909</WebUI>
+  <Category>Backup: Cloud:</Category>
+  <WebUI>http://[IP]:[PORT]</WebUI>
   <TemplateURL/>
   <Icon>https://git.deuxfleurs.fr/ragazenta/garage/media/tag/v0.4.0/doc/logo/garage.png</Icon>
   <ExtraParams/>
