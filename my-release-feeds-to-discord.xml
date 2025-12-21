@@ -10,7 +10,7 @@
   <Support>https://discord.gg/p9xkjEw8ts</Support>
   <Project>https://codeberg.org/waazaa/release-feeds-to-discord</Project>
   <Overview>Send latest docker image releases from RSS links.</Overview>
-  <Category/>
+  <Category>Tools:</Category>
   <WebUI>http://[IP]:[PORT:6543]</WebUI>
   <TemplateURL/>
   <Icon>https://codeberg.org/waazaa/release-feeds-to-discord/raw/branch/main/logo.png</Icon>
