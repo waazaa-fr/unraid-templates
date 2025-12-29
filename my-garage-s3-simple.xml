@@ -33,6 +33,7 @@ Garage est un logiciel de stockage d&#x2019;objets distribu&#xE9;, l&#xE9;ger et
   <Config Name="RPC between nodes" Target="3901" Default="" Mode="tcp" Description="Port for distributed data between nodes." Type="Port" Display="always" Required="false" Mask="false">3901</Config>
   <Config Name="S3 web interface" Target="3902" Default="3902" Mode="tcp" Description="S3 web port for website bucket" Type="Port" Display="always" Required="false" Mask="false">3902</Config>
   <Config Name="Admin API" Target="3903" Default="3903" Mode="tcp" Description="Admin API port if you use garage WebUI container." Type="Port" Display="always" Required="false" Mask="false">3903</Config>
+  <Config Name="NODE_IP" Target="NODE_IP" Default="" Mode="" Description="The IP of this container." Type="Variable" Display="always" Required="true" Mask="false"/>
   <Config Name="GATEWAY" Target="GATEWAY" Default="0.0.0.0" Mode="" Description="Point to your container ip." Type="Variable" Display="always" Required="false" Mask="false">0.0.0.0</Config>
   <Config Name="RPC_SECRET" Target="RPC_SECRET" Default="" Mode="" Description="Auto-generated in first boot on your garage.toml but set it up after that here." Type="Variable" Display="always" Required="false" Mask="false"/>
   <Config Name="REPLICATION_FACTOR" Target="REPLICATION_FACTOR" Default="" Mode="" Description="The replication factor. RTFM." Type="Variable" Display="always" Required="false" Mask="false">1</Config>
