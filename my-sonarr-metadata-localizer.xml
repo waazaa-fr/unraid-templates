@@ -7,7 +7,7 @@
   <MyIP/>
   <Shell>sh</Shell>
   <Privileged>false</Privileged>
-  <Support/>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
   <Project>https://hub.docker.com/r/waazaafr/sonarr-metadata-localizer</Project>
   <ReadMe>https://hub.docker.com/r/waazaafr/sonarr-metadata-localizer</ReadMe>
   <Overview>FR:&#13;
