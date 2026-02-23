@@ -1,0 +1,55 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>sonarr-metadata-localizer</Name>
+  <Repository>waazaafr/sonarr-metadata-localizer:latest</Repository>
+  <Registry>waazaafr/sonarr-metadata-localizer:latest</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support/>
+  <Project>https://hub.docker.com/r/waazaafr/sonarr-metadata-localizer</Project>
+  <ReadMe>https://hub.docker.com/r/waazaafr/sonarr-metadata-localizer</ReadMe>
+  <Overview>FR:&#13;
+Image docker qui met &#xE0; jour les .nfo g&#xE9;n&#xE9;r&#xE9;s par Sonarr pour y mettre les titres et plot localis&#xE9;s depuis TMDB.&#13;
+&#13;
+EN:&#13;
+Docker image that updates Sonarr-generated NFO files using TMDb localized metadata (title/overview), and can optionally download series artwork in Jellyfin-friendly filenames.</Overview>
+  <Category>MediaApp:Video</Category>
+  <WebUI/>
+  <TemplateURL/>
+  <Icon>https://iili.io/qKfsxN2.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1771863459</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires>FR:&#13;
+Si vous voulez que la traduction se fasse automatiquement &#xE0; l'ajout de contenu dans Sonarr vous devrez y cr&#xE9;er un webhook. Lisez la page Project pour plus d'infos.&#13;
+&#13;
+EN:&#13;
+To enable automatic translation when content is added to Sonarr, create a webhook in Sonarr settings. See the Project page for details.</Requires>
+  <Config Name="PORT" Target="8787" Default="8787" Mode="tcp" Description="Webhook server port" Type="Port" Display="always" Required="false" Mask="false">8787</Config>
+  <Config Name="TMDB_API_KEY" Target="TMDB_API_KEY" Default="" Mode="" Description="Your TMDB_API_KEY" Type="Variable" Display="always" Required="true" Mask="false">XXXXXXXXXXXXXXXXXXXXXXXXXXXX</Config>
+  <Config Name="AUTH_TOKEN" Target="AUTH_TOKEN" Default="" Mode="" Description="The token for accepting webhook" Type="Variable" Display="always" Required="true" Mask="false">webhooklongtokenaccess</Config>
+  <Config Name="TMDB_LANGUAGE" Target="TMDB_LANGUAGE" Default="fr_FR" Mode="" Description="Your locale for title and plot of .nfo from TMDB" Type="Variable" Display="always" Required="false" Mask="false">fr_FR</Config>
+  <Config Name="TMDB_IMAGE_LANGUAGE" Target="TMDB_IMAGE_LANGUAGE" Default="fr,null" Mode="" Description="Language for artworks from TMDB when available." Type="Variable" Display="always" Required="false" Mask="false">fr,null</Config>
+  <Config Name="CRON_CHECK_INTERVAL" Target="CRON_CHECK_INTERVAL" Default="0 6 * * *" Mode="" Description="Cron interval for proactive work on existent files." Type="Variable" Display="always" Required="true" Mask="false">0 6 * * *</Config>
+  <Config Name="CRON_BAK_CLEANUP" Target="CRON_BAK_CLEANUP" Default="" Mode="" Description="Cron interval for cleanup of .bak files." Type="Variable" Display="always" Required="true" Mask="false">15 3 * * *</Config>
+  <Config Name="/tv" Target="/tv" Default="" Mode="rw" Description="Map a folder containing all your series/shows." Type="Path" Display="always" Required="true" Mask="false">/mnt/user/Series</Config>
+  <Config Name="SONARR_ROOT_FOLDER" Target="SONARR_ROOT_FOLDER" Default="/tv" Mode="" Description="The correspind path on container side of your folder containing your series/shows." Type="Variable" Display="always" Required="true" Mask="false">/tv</Config>
+  <Config Name="DOWNLOAD_IMAGES ?" Target="DOWNLOAD_IMAGES" Default="true" Mode="" Description="Download localized artworks when available ?" Type="Variable" Display="advanced-hide" Required="false" Mask="false">true</Config>
+  <Config Name="SKIP_EMPTY ?" Target="SKIP_EMPTY" Default="true" Mode="" Description="Skip when there are no TMDB content." Type="Variable" Display="advanced-hide" Required="false" Mask="false">true</Config>
+  <Config Name="DRY_RUN ?" Target="DRY_RUN" Default="true" Mode="" Description="Dry-run process ? Set to false to do the work." Type="Variable" Display="advanced-hide" Required="false" Mask="false">true</Config>
+  <Config Name="UPDATE_SHOW_TITLE ?" Target="UPDATE_SHOW_TITLE" Default="false" Mode="" Description="Should also replace title ?" Type="Variable" Display="advanced-hide" Required="false" Mask="false">false</Config>
+  <Config Name="SERIES_COVER_NAME" Target="SERIES_COVER_NAME" Default="cover.jpg" Mode="" Description="Name of cover artwork" Type="Variable" Display="advanced-hide" Required="false" Mask="false">cover.jpg</Config>
+  <Config Name="SERIES_POSTER_NAME" Target="SERIES_POSTER_NAME" Default="poster.jpg" Mode="" Description="Name of poster artwork" Type="Variable" Display="advanced-hide" Required="false" Mask="false">poster.jpg</Config>
+  <Config Name="SERIES_BACKDROP_NAME" Target="SERIES_BACKDROP_NAME" Default="backdrop.jpg" Mode="" Description="Name of the backdrop artwork" Type="Variable" Display="advanced-hide" Required="false" Mask="false">backdrop.jpg</Config>
+  <Config Name="SERIES_LOGO_NAME" Target="SERIES_LOGO_NAME" Default="logo.png" Mode="" Description="Name of the logo artwork" Type="Variable" Display="advanced-hide" Required="false" Mask="false">logo.png</Config>
+  <Config Name="SLEEP_BETWEEN_REQUESTS" Target="SLEEP_BETWEEN_REQUESTS" Default="0.25" Mode="" Description="To respect call limit of TMDB of 4 per second." Type="Variable" Display="advanced-hide" Required="false" Mask="false">0.25</Config>
+  <Config Name="HTTP_TIMEOUT" Target="HTTP_TIMEOUT" Default="25" Mode="" Description="HTTP timeout in seconds." Type="Variable" Display="advanced-hide" Required="false" Mask="false">25</Config>
+  <Config Name="ALLOWED_EVENT_TYPES" Target="ALLOWED_EVENT_TYPES" Default="Download,Upgrade,Rename,SeriesAdd,SeriesEdit" Mode="" Description="Comma separated Sonarr event processed by webhook" Type="Variable" Display="advanced-hide" Required="false" Mask="false">Download,Upgrade,Rename,SeriesAdd,SeriesEdit</Config>
+  <Config Name="LOG_LEVEL" Target="LOG_LEVEL" Default="info" Mode="" Description="LOG level" Type="Variable" Display="advanced-hide" Required="false" Mask="false">info</Config>
+  <TailscaleStateDir/>
+</Container>
