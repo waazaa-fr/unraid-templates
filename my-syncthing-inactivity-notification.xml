@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>syncthing-notification</Name>
+  <Repository>waazaafr/syncthing-inactivity-notification:latest</Repository>
+  <Registry>waazaafr/syncthing-inactivity-notification</Registry>
+  <Network>bridge</Network>
+  <MyIP/>
+  <MyMAC/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/r/waazaafr/syncthing-inactivity-notification</Project>
+  <ReadMe>https://hub.docker.com/r/waazaafr/syncthing-inactivity-notification</ReadMe>
+  <Overview>The application polls the Syncthing REST API at regular intervals (default: every 15 minutes) to detect the last modification time of each monitored folder. If a folder has not been modified for longer than a configurable threshold, a notification is sent at the scheduled time.&#13;
+&#13;
+Supported notification channels:&#13;
+- Email (SMTP with STARTTLS or SSL)&#13;
+- Gotify (self-hosted push notifications)&#13;
+- Discord (webhook</Overview>
+  <Category>Tools:</Category>
+  <WebUI>http://[IP]:[PORT:8080]</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/syncthing-inactivity-monitor.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1782569973</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="PORT" Target="8080" Default="" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8182</Config>
+  <Config Name="appdata" Target="/data" Default="" Mode="rw" Description="Persistent folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/syncthing-inactivity-notification/</Config>
+  <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="df53a8dbf180df47ca9fdd4bd9a42bb9" Mode="" Description="A random SECRET_KEY. You can generate one using: openssl rand -hex 16" Type="Variable" Display="always" Required="false" Mask="false">df53a8dbf180df47ca9fdd4bd9a42bb9</Config>
+  <TailscaleStateDir/>
+</Container>
