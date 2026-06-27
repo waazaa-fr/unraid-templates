@@ -31,5 +31,7 @@ Supported notification channels:&#13;
   <Config Name="PORT" Target="8080" Default="" Mode="tcp" Description="WebUI Port" Type="Port" Display="always" Required="false" Mask="false">8182</Config>
   <Config Name="appdata" Target="/data" Default="" Mode="rw" Description="Persistent folder" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/syncthing-inactivity-notification/</Config>
   <Config Name="SECRET_KEY" Target="SECRET_KEY" Default="df53a8dbf180df47ca9fdd4bd9a42bb9" Mode="" Description="A random SECRET_KEY. You can generate one using: openssl rand -hex 16" Type="Variable" Display="always" Required="false" Mask="false">df53a8dbf180df47ca9fdd4bd9a42bb9</Config>
+  <Config Name="PUID" Target="PUID" Default="99" Mode="" Description="PUID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">99</Config>
+  <Config Name="PGID" Target="PGID" Default="100" Mode="" Description="PGID" Type="Variable" Display="advanced-hide" Required="false" Mask="false">100</Config>
   <TailscaleStateDir/>
 </Container>
