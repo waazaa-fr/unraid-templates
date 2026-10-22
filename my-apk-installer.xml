@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<Container version="2">
+  <Name>apk-installer</Name>
+  <Repository>waazaafr/apk-installer:latest</Repository>
+  <Registry/>
+  <Network>host</Network>
+  <MyIP/>
+  <MyMAC/>
+  <Shell>sh</Shell>
+  <Privileged>false</Privileged>
+  <Support>https://discord.gg/p9xkjEw8ts</Support>
+  <Project>https://hub.docker.com/r/waazaafr/apk-installer</Project>
+  <ReadMe/>
+  <Overview>Deploy APKs to your Android devices over the network, from a web interface.</Overview>
+  <Category/>
+  <WebUI>http:/[IP]:8934</WebUI>
+  <TemplateURL/>
+  <Icon>https://raw.githubusercontent.com/waazaa-fr/unraid-templates/refs/heads/main/apk-installer.png</Icon>
+  <ExtraParams/>
+  <PostArgs/>
+  <CPUset/>
+  <DateInstalled>1792649228</DateInstalled>
+  <DonateText>Buy me a coffee</DonateText>
+  <DonateLink>https://buymeacoffee.com/waazaa</DonateLink>
+  <Requires/>
+  <Config Name="/data" Target="/data" Default="" Mode="rw" Description="" Type="Path" Display="always" Required="false" Mask="false">/mnt/user/appdata/apk-installer</Config>
+  <Config Name="AUTH_USERNAME" Target="AUTH_USERNAME" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="false">admin</Config>
+  <Config Name="AUTH_PASSWORD" Target="AUTH_PASSWORD" Default="" Mode="" Description="" Type="Variable" Display="always" Required="false" Mask="true">admin</Config>
+  <TailscaleStateDir/>
+</Container>
